@@ -1,0 +1,5 @@
+2012-06-10 16:26:45,541 [DefaultQuartzScheduler_Worker-2] ERROR imperugo.linkflood.scheduler.LinkfloodGrabjob [(null)] - [Scheduler] Unable to grab the job imper-WIN8 [(null)] [(null)] [(null)] 
+ System.Net.WebException: The request was aborted: Could not create SSL/TLS secure channel.
+   at System.Net.HttpWebRequest.GetResponse()
+   at imperugo.linkflood.scheduler.LinkfloodGrabjob.DownloadWebPage(Uri url) in c:\Project\Spike\Linkflood\imperugo.linkflood.scheduler\LinkfloodGrabjob.cs:line 79
+   at imperugo.linkflood.scheduler.LinkfloodGrabjob.Execute(IJobExecutionContext context) in c:\Project\Spike\Linkflood\imperugo.linkflood.scheduler\LinkfloodGrabjob.cs:line 37

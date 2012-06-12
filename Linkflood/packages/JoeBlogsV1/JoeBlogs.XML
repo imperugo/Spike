@@ -1,0 +1,590 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JoeBlogs</name>
+    </assembly>
+    <members>
+        <member name="T:AlexJamesBrown.JoeBlogs.Structs.Comment">
+            <summary>
+            A comment on a blog item
+            </summary>
+        </member>
+        <member name="T:AlexJamesBrown.JoeBlogs.Structs.PageTemplate">
+            <summary>
+            Page.
+            </summary>
+        </member>
+        <member name="T:AlexJamesBrown.JoeBlogs.Structs.Author">
+            <summary> 
+            This struct represents information about a user. 
+            </summary> 
+        </member>
+        <member name="T:AlexJamesBrown.JoeBlogs.WordPressWrapper">
+            <summary>
+            Represents a wrapper for use with Wordpress blogs.
+            </summary>
+        </member>
+        <member name="T:AlexJamesBrown.JoeBlogs.BaseWrapper">
+            <summary>
+            Represents a wrapper.
+            </summary>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.BaseWrapper.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="!:WrapperBase"/> class.
+            </summary>
+            <param name="url">The URL.</param>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.BaseWrapper.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="!:WrapperBase"/> class.
+            </summary>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+        </member>
+        <member name="P:AlexJamesBrown.JoeBlogs.BaseWrapper.BlogID">
+            <summary>
+            Gets or sets the blog ID.
+            </summary>
+            <value>The blog ID.</value>
+        </member>
+        <member name="P:AlexJamesBrown.JoeBlogs.BaseWrapper.Username">
+            <summary>
+            Gets or sets the username.
+            </summary>
+            <value>The username.</value>
+        </member>
+        <member name="P:AlexJamesBrown.JoeBlogs.BaseWrapper.Password">
+            <summary>
+            Gets or sets the password.
+            </summary>
+            <value>The password.</value>
+        </member>
+        <member name="P:AlexJamesBrown.JoeBlogs.BaseWrapper.Url">
+            <summary>
+            Gets or sets the URL.
+            </summary>
+            <value>The URL.</value>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.MetaWeblogWrapper.NewPost(AlexJamesBrown.JoeBlogs.Structs.Post,System.Boolean)">
+            <summary> 
+            Posts a new entry to a blog. 
+            </summary> 
+            <param name="content">The content.</param>
+            <param name="publish">If false, this is a draft post.</param>
+            <returns>The postid of the newly-created post.</returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.MetaWeblogWrapper.EditPost(AlexJamesBrown.JoeBlogs.Structs.Post,System.Boolean)">
+            <summary>
+            Edits an existing entry on a blog.
+            </summary>
+            <param name="content">The content.</param>
+            <param name="publish">If false, this is a draft post.</param>
+            <returns>Always returns true.</returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.MetaWeblogWrapper.GetCategories">
+            <summary> 
+            Returns the list of categories that have been used in the blog. 
+            </summary> 
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.MetaWeblogWrapper.GetRecentPosts(System.Int32)">
+            <summary>
+            Returns the most recent draft and non-draft blog posts sorted in descending order by publish date. 
+            </summary>
+            <param name="numberOfPosts">The number of posts to return.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.MetaWeblogWrapper.DeletePost(System.String)">
+            <summary>
+            Deletes a post from the blog.
+            </summary>
+            <param name="postid">The ID of the post to delete.</param>
+            <returns>Always returns true.</returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.MetaWeblogWrapper.GetUserInfo">
+            <summary>
+            Returns basic user info (name, e-mail, userid, and so on).
+            </summary>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.MetaWeblogWrapper.GetUserBlogs">
+            <summary>
+            Gets the blogs for the logged in user.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.MetaWeblogWrapper.NewMediaObject(AlexJamesBrown.JoeBlogs.Structs.MediaObject)">
+            <summary>
+            Creates a new media object.
+            </summary>
+            <param name="mediaObject">The media object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:AlexJamesBrown.JoeBlogs.WordPressWrapper"/> class.
+            </summary>
+            <param name="url">The URL.</param>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.GetUserBlogs">
+            <summary>
+            Retrieve the blogs of the users.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.GetTags">
+            <summary>
+            Get list of all tags. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.GetCommentCount(System.String)">
+            <summary>
+            Retrieve comment count for a specific post. 
+            </summary>
+            <param name="post_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.GetPostStatusList">
+            <summary>
+            Retrieve post statuses.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.GetPageTemplates">
+            <summary>
+            Retrieve page templates.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.GetOptions(System.String[])">
+            <summary>
+            Retrieve blog options. If passing in an array, search for options listed within it. 
+            </summary>
+            <param name="blogId"></param>
+            <param name="username"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.SetOptions">
+            <summary>
+            Update blog options. Returns array of structs showing updated values. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.DeleteComment(System.String)">
+            <summary>
+            Remove comment.
+            </summary>
+            <param name="comment_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.EditComment(AlexJamesBrown.JoeBlogs.Structs.Comment)">
+            <summary>
+            Edit comment.
+            </summary>
+            <param name="comment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.NewComment(System.String,AlexJamesBrown.JoeBlogs.Structs.Comment)">
+            <summary>
+            Create new comment.
+            </summary>
+            <param name="postid"></param>
+            <param name="comment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.GetCommentStatusList(System.String)">
+            <summary>
+            Retrieve all of the comment status.
+            </summary>
+            <param name="post_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.GetPage(System.String)">
+            <summary>
+            Get the page identified by the page id. 
+            </summary>
+            <param name="pageid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.GetPages">
+            <summary>
+            Get an array of all the pages on a blog. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.GetPageList">
+            <summary>
+            Get an array of all the pages on a blog. Just the minimum details, lighter than GetPages. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.NewPage(AlexJamesBrown.JoeBlogs.Structs.Page)">
+            <summary>
+            Create a new page. Similar to metaWeblog.newPost.
+            </summary>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.DeletePage(System.String)">
+            <summary>
+            Removes a page from the blog. 
+            </summary>
+            <param name="page_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.EditPage(AlexJamesBrown.JoeBlogs.Structs.Page)">
+            <summary>
+            Make changes to a blog page.
+            </summary>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.GetAuthors">
+            <summary>
+            Get an array of users for the blog.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.GetCategories">
+            <summary>
+            Get an array of available categories on a blog.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.NewCategory(System.String,System.String,System.String)">
+            <summary>
+            Create a new category.
+            </summary>
+            <param name="title">The title of the category.</param>
+            <param name="description">Description of the category.</param>
+            <param name="parentId">The ID of the categories parent. If null, will default to 0 (root).</param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.DeleteCategory(System.String)">
+            <summary>
+            Delete a category.
+            </summary>
+            <param name="category_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.SuggestCategories(System.String,System.Int32)">
+            <summary>
+            Get an array of categories that start with a given string.
+            </summary>
+            <param name="category"></param>
+            <param name="max_results"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.UploadFile(AlexJamesBrown.JoeBlogs.Structs.Data)">
+            <summary>
+            Upload a file.
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.GetComment(System.String)">
+            <summary>
+            Gets a comment, given it's comment ID. Note that this only works for WordPress version 2.6.1 or higher.
+            </summary>
+            <param name="comment_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.WordPressWrapper.GetComments(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Gets a set of comments for a given post. Note that this only works for WordPress version 2.6.1 or higher.
+            </summary>
+            <param name="post_id"></param>
+            <param name="status"></param>
+            <param name="number"></param>
+            <param name="offset"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AlexJamesBrown.JoeBlogs.Structs.File">
+            <summary> 
+            This struct represents information about a user. 
+            </summary> 
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.XmlRpcInterfaces.IMetaWeblogXmlRpc.DeletePost(System.String,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Deletes the post.
+            </summary>
+            <param name="appKey">The app key.</param>
+            <param name="postid">The postid.</param>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+            <param name="publish">if set to <c>true</c> [publish].</param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.XmlRpcInterfaces.IMetaWeblogXmlRpc.EditPost(System.String,System.String,System.String,AlexJamesBrown.JoeBlogs.Structs.Post,System.Boolean)">
+            <summary>
+            Edits the post.
+            </summary>
+            <param name="postid">The postid.</param>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+            <param name="content">The content.</param>
+            <param name="publish">if set to <c>true</c> [publish].</param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.XmlRpcInterfaces.IMetaWeblogXmlRpc.GetCategories(System.String,System.String,System.String)">
+            <summary>
+            Gets the categories.
+            </summary>
+            <param name="blogid">The blogid.</param>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.XmlRpcInterfaces.IMetaWeblogXmlRpc.GetRecentPosts(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Gets the recent posts.
+            </summary>
+            <param name="blogid">The blogid.</param>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+            <param name="numberOfPosts">The number of posts.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.XmlRpcInterfaces.IMetaWeblogXmlRpc.GetUserInfo(System.String,System.String,System.String)">
+            <summary>
+            Gets the user info.
+            </summary>
+            <param name="appKey">The app key.</param>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.XmlRpcInterfaces.IMetaWeblogXmlRpc.NewMediaObject(System.String,System.String,System.String,AlexJamesBrown.JoeBlogs.Structs.MediaObject)">
+            <summary>
+            News the media object.
+            </summary>
+            <param name="blogid">The blogid.</param>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+            <param name="mediaObject">The media object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.XmlRpcInterfaces.IMetaWeblogXmlRpc.NewPost(System.String,System.String,System.String,AlexJamesBrown.JoeBlogs.Structs.Post,System.Boolean)">
+            <summary>
+            News the post.
+            </summary>
+            <param name="blogid">The blogid.</param>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+            <param name="content">The content.</param>
+            <param name="publish">if set to <c>true</c> [publish].</param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.XmlRpcInterfaces.IMetaWeblogXmlRpc.GetPost(System.String,System.String,System.String)">
+            <summary>
+            Gets the post.
+            </summary>
+            <param name="postid">The postid.</param>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.XmlRpcInterfaces.IMetaWeblogXmlRpc.GetUserBlogs(System.String,System.String)">
+            <summary>
+            Gets the user blogs.
+            </summary>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+            <returns></returns>
+        </member>
+        <member name="T:AlexJamesBrown.JoeBlogs.Structs.UserInfo">
+            <summary> 
+            This struct represents information about a user. 
+            </summary> 
+        </member>
+        <member name="T:AlexJamesBrown.JoeBlogs.Structs.CommentFilter">
+            <summary>
+            Filtering structure for getting comments.
+            </summary>
+        </member>
+        <member name="T:AlexJamesBrown.JoeBlogs.Structs.Data">
+            <summary> 
+            This struct represents information about a user. 
+            </summary> 
+        </member>
+        <member name="T:AlexJamesBrown.JoeBlogs.XmlRpcInterfaces.IWordPressXmlRpc">
+            <summary>
+            WordPress XML RPC
+            http://codex.wordpress.org/XML-RPC_wp
+            </summary>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.XmlRpcInterfaces.IWordPressXmlRpc.GetUserBlogs(System.String,System.String)">
+            <summary>
+            Gets the user blogs.
+            </summary>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.XmlRpcInterfaces.IWordPressXmlRpc.GetTags(System.String,System.String,System.String)">
+            <summary>
+            Gets the tags.
+            </summary>
+            <param name="blogId">The blog id.</param>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.XmlRpcInterfaces.IWordPressXmlRpc.GetCommentCount(System.String,System.String,System.String,System.String)">
+            <summary>
+            Gets the comment count.
+            </summary>
+            <param name="blogId">The blog id.</param>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+            <param name="post_id">The post_id.</param>
+            <returns></returns>
+        </member>
+        <member name="T:AlexJamesBrown.JoeBlogs.Structs.MediaObjectInfo">
+            <summary>
+            Represents media object info - The URL to the media object.
+            </summary>
+        </member>
+        <member name="F:AlexJamesBrown.JoeBlogs.Structs.MediaObjectInfo.url">
+            <summary>
+            The URL to the media object.
+            </summary>
+        </member>
+        <member name="T:AlexJamesBrown.JoeBlogs.Structs.CustomField">
+            <summary>
+            Custom field info attached to a blog item.
+            </summary>
+        </member>
+        <member name="T:AlexJamesBrown.JoeBlogs.Structs.Option">
+            <summary>
+            Page.
+            </summary>
+        </member>
+        <member name="T:AlexJamesBrown.JoeBlogs.Structs.MediaObject">
+            <summary>
+            Represents a Media Object - this is usually an image, video, document etc..
+            </summary>
+        </member>
+        <member name="F:AlexJamesBrown.JoeBlogs.Structs.MediaObject.name">
+            <summary>
+            The name of the Media Object.
+            </summary>
+        </member>
+        <member name="F:AlexJamesBrown.JoeBlogs.Structs.MediaObject.type">
+            <summary>
+            The type of the Media Object.
+            </summary>
+        </member>
+        <member name="F:AlexJamesBrown.JoeBlogs.Structs.MediaObject.bits">
+            <summary>
+            The byte array of the Media Object itself.
+            
+            </summary>
+        </member>
+        <member name="T:AlexJamesBrown.JoeBlogs.Structs.Page">
+            <summary>
+            Page.
+            </summary>
+        </member>
+        <member name="T:AlexJamesBrown.JoeBlogs.Structs.Post">
+            <summary> 
+            This struct represents the information about a post that could be returned by the 
+            EditPost(), GetRecentPosts() and GetPost() methods. 
+            </summary> 
+        </member>
+        <member name="T:AlexJamesBrown.JoeBlogs.Structs.PostStatusList">
+            <summary>
+            A comment on a blog item
+            </summary>
+        </member>
+        <member name="T:AlexJamesBrown.JoeBlogs.Structs.CommentCount">
+            <summary>
+            Shows total number of comments, as well as a break down of comments approved, awaiting moderation, marked as spam.
+            </summary>
+        </member>
+        <member name="T:AlexJamesBrown.JoeBlogs.Structs.TagInfo">
+            <summary>
+            Represents a tag.
+            </summary>
+        </member>
+        <member name="F:AlexJamesBrown.JoeBlogs.Structs.TagInfo.id">
+            <summary>
+            The id.
+            </summary>
+        </member>
+        <member name="F:AlexJamesBrown.JoeBlogs.Structs.TagInfo.name">
+            <summary>
+            The name. This is also usually the textual representation of the tag.
+            </summary>
+        </member>
+        <member name="F:AlexJamesBrown.JoeBlogs.Structs.TagInfo.count">
+            <summary>
+            The number of posts tagged with this tag.
+            </summary>
+        </member>
+        <member name="F:AlexJamesBrown.JoeBlogs.Structs.TagInfo.slug">
+            <summary>
+            The slug of this tag - usually a lowercase version of the tag, with spaces replaced by hyphens.
+            </summary>
+        </member>
+        <member name="F:AlexJamesBrown.JoeBlogs.Structs.TagInfo.html_url">
+            <summary>
+            The url for the search result page for the tag.
+            </summary>
+        </member>
+        <member name="F:AlexJamesBrown.JoeBlogs.Structs.TagInfo.rss_url">
+            <summary>
+            The url to the rss feed for the tag.
+            </summary>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.Structs.TagInfo.ToString">
+            <summary>
+            Returns the fully qualified type name of this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> containing a fully qualified type name.
+            </returns>
+        </member>
+        <member name="T:AlexJamesBrown.JoeBlogs.Structs.PageMin">
+            <summary>
+            Page.
+            </summary>
+        </member>
+        <member name="T:AlexJamesBrown.JoeBlogs.Structs.Utility">
+            <summary>
+            Utility class.
+            </summary>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.Structs.Utility.ConvertImageToByteArray(System.Drawing.Image,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            Converts the image to a byte array.
+            </summary>
+            <param name="imageToConvert">The image to convert.</param>
+            <param name="formatOfImage">The format of image.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AlexJamesBrown.JoeBlogs.Structs.Utility.ConvertByteArrayToImage(System.Byte[])">
+            <summary>
+            Converts the byte array to image.
+            </summary>
+            <param name="byteArray">The byte array.</param>
+            <returns></returns>
+        </member>
+        <member name="T:AlexJamesBrown.JoeBlogs.Structs.UserBlog">
+            <summary> 
+            This struct represents information about a user's blog. 
+            </summary> 
+        </member>
+        <member name="T:AlexJamesBrown.JoeBlogs.Structs.Category">
+            <summary> 
+            This struct represents the information about a category that could be returned by the 
+            getCategories() method. 
+            </summary> 
+        </member>
+    </members>
+</doc>

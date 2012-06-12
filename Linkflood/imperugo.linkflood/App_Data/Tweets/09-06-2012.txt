@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfTweet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Tweet>
+    <CreationDate>2012-06-08T08:46:06+02:00</CreationDate>
+    <Id>210986039534288896</Id>
+    <Text>Utilizing jQuery UI Animations for Neat Page Effects http://t.co/dc6Cb9Qs #dev #jquery #javascript #js</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-06-08T08:45:20+02:00</CreationDate>
+    <Id>210985847414210560</Id>
+    <Text>PouchDB http://t.co/Us1qGryw #dev #javascript #pouchdb #js</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-06-08T08:44:23+02:00</CreationDate>
+    <Id>210985608825417728</Id>
+    <Text>Announcing Microsoft “Roslyn” June 2012 CTP http://t.co/m0AZhCDL #dev #roslyn</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-06-08T08:44:02+02:00</CreationDate>
+    <Id>210985519411240960</Id>
+    <Text>VSCommands http://t.co/whFGuUVU #dev #vscommands #visualstudio #vs</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-06-08T08:41:50+02:00</CreationDate>
+    <Id>210984965687623680</Id>
+    <Text>http://t.co/7OZEr7F2 MVC: Handling Exceptions and 404 Errors http://t.co/HvXuvCt8 #dev #aspnetmvc #aspnet</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-06-08T08:40:35+02:00</CreationDate>
+    <Id>210984649806184448</Id>
+    <Text>On to the New Windows Azure http://t.co/Ujcuy2vS #dev #azure #cloud</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-06-08T08:39:54+02:00</CreationDate>
+    <Id>210984481321000960</Id>
+    <Text>Pushing the NuGet gallery to an Azure Web Site http://t.co/nNJnPa6i #dev #nuget #azure</Text>
+  </Tweet>
+</ArrayOfTweet>
