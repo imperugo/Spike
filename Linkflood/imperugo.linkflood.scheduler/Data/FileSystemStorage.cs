@@ -26,9 +26,10 @@ namespace imperugo.linkflood.scheduler.Data{
 
 				if (ls == null)
 				{
-					ls = GetTweets(DateTime.UtcNow.Date);
-					toBeSaved.Add(new Tuple<IList<Tweet>, DateTime>(ls, DateTime.UtcNow.Date));
+					ls = GetTweets(tweet.CreationDate.Date);
+					toBeSaved.Add(new Tuple<IList<Tweet>, DateTime>(ls, tweet.CreationDate.Date));
 				}
+				else
 				
 				if(!ls.Any(x => x.Id == tweet.Id))
 					ls.Add(tweet);
@@ -58,7 +59,6 @@ namespace imperugo.linkflood.scheduler.Data{
 			return serializedData.Deserialize<List<Tweet>>();
 		}
 
-		
 		public long? GetLastTweetId(){
 			throw new NotImplementedException();
 		}

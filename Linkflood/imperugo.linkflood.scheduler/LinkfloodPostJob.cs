@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AlexJamesBrown.JoeBlogs.Structs;
+using Common.Logging;
 using Quartz;
 using imperugo.linkflood.scheduler.Data;
 using imperugo.linkflood.scheduler.Entities;
 using imperugo.linkflood.scheduler.Helpers;
 using AlexJamesBrown.JoeBlogs;
-using log4net;
-
 
 namespace imperugo.linkflood.scheduler{
-	public class LinkfloodPostJob : IJob{
-		static readonly ILog logger = LogManager.GetLogger(typeof (LinkfloodPostJob));
+	public class LinkfloodPostJob : IJob
+	{
+		private static readonly ILog logger = LogManager.GetCurrentClassLogger();
 
 		#region IJob Members
 
@@ -110,7 +110,7 @@ namespace imperugo.linkflood.scheduler{
 			content.title = title;
 			content.description = body;
 			content.categories = new[] { "Linkflood" };
-			content.dateCreated = DateTime.Now;
+			content.dateCreated = DateTime.UtcNow;
 			wp.NewPost(content, true);
 
 			logger.InfoFormat("[Scheduler] Post added '{0}'", title);

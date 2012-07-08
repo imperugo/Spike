@@ -7,7 +7,6 @@ using System.Web.Routing;
 using Quartz;
 using Quartz.Impl;
 using imperugo.linkflood.scheduler;
-using log4net.Config;
 
 namespace imperugo.linkflood
 {
@@ -16,6 +15,8 @@ namespace imperugo.linkflood
 
 	public class MvcApplication : System.Web.HttpApplication
 	{
+		//public static DocumentStore Store;
+
 		public static void RegisterGlobalFilters(GlobalFilterCollection filters)
 		{
 			filters.Add(new HandleErrorAttribute());
@@ -47,7 +48,12 @@ namespace imperugo.linkflood
 
 			BundleTable.Bundles.RegisterTemplateBundles();
 
-			XmlConfigurator.ConfigureAndWatch(GetConfigFile("log4net.config"));
+			//Store  = new EmbeddableDocumentStore
+			//			{
+			//				DataDirectory = AppDomain.CurrentDomain.BaseDirectory + "App_Data/RavenDb/"
+			//			};
+
+			//Store.Initialize();
 
 			StartScheduler();
 		}
@@ -76,27 +82,25 @@ namespace imperugo.linkflood
 				.WithCronSchedule("0 0/1 * 1/1 * ? *")
 			.Build();
 
+			ITrigger fiveMinutes = TriggerBuilder.Create()
+			.WithIdentity("5Min", "group1")
+				.WithCronSchedule("0 0/5 * 1/1 * ? *")
+			.Build();
+
 			ITrigger everyDay = TriggerBuilder.Create()
 			.WithIdentity("everyDay", "group1")
 				.WithCronSchedule("0 0 11 1/1 * ? *")
 			.Build();
 
 
+			//sched.ScheduleJob(grabberJob, fiveMinutes);
+			//sched.ScheduleJob(grabberJob, oneMinute);
 			sched.ScheduleJob(grabberJob, halfHour);
+			//sched.ScheduleJob(posterJob, fiveMinutes);
 			sched.ScheduleJob(posterJob, everyDay);
+			
 
 			sched.Start();
-		}
-
-		static FileInfo GetConfigFile(string fileName)
-		{
-			if (Path.IsPathRooted(fileName))
-			{
-				return new FileInfo(fileName);
-			}
-			FileInfo r = new FileInfo(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, fileName));
-
-			return r;
 		}
 	}
 }

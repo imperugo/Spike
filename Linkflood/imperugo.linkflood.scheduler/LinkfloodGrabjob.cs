@@ -4,16 +4,17 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
+using Common.Logging;
 using Newtonsoft.Json;
 using Quartz;
 using imperugo.linkflood.scheduler.Data;
 using imperugo.linkflood.scheduler.Entities;
-using log4net;
 
 namespace imperugo.linkflood.scheduler
 {
-	public class LinkfloodGrabjob : IJob{
-		static readonly ILog logger = LogManager.GetLogger(typeof(LinkfloodGrabjob));
+	public class LinkfloodGrabjob : IJob
+	{
+		private static readonly ILog Logger = LogManager.GetCurrentClassLogger();
 
 		/// <summary>
 		/// Called by the <see cref="T:Quartz.IScheduler"/> when a <see cref="T:Quartz.ITrigger"/>
@@ -30,9 +31,9 @@ namespace imperugo.linkflood.scheduler
 		/// <param name="context">The execution context.</param>
 		public void Execute(IJobExecutionContext context){
 			try{
-				logger.Info("test");
+				Logger.Info("test");
 
-				string twitterUrl = string.Format("https://api.twitter.com/1/statuses/user_timeline.json?include_entities=false&include_rts=false&screen_name={0}&count=20&exclude_replies=true", LinkfloodConfiguration.TwitterUsername);
+				string twitterUrl = string.Format("https://api.twitter.com/1/statuses/user_timeline.json?include_entities=false&include_rts=false&screen_name={0}&count=200&exclude_replies=true", LinkfloodConfiguration.TwitterUsername);
 
 				var response = this.DownloadWebPage(new Uri(twitterUrl));
 
@@ -48,7 +49,11 @@ namespace imperugo.linkflood.scheduler
 					foreach (var category in LinkfloodConfiguration.Categories){
 						foreach (var match in category.Matches){
 							if(msg.Contains(match)){
-								var t = ConvertTweet(tweet);
+								Tweet t = ConvertTweet(tweet);
+
+								//if (t.CreationDate.ToUniversalTime() < DateTime.UtcNow)
+								//	continue;
+
 								tweetsToStore.Add(t);
 							}
 						}
@@ -62,7 +67,7 @@ namespace imperugo.linkflood.scheduler
 				storage.Save(tweetsToStore);
 			}
 			catch (Exception e){
-				logger.Error("[Scheduler] Unable to grab the job", e);
+				Logger.Error("[Scheduler] Unable to grab the job", e);
 			}
 		}
 

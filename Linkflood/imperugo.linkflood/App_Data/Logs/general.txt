@@ -1,5 +1,60 @@
-2012-06-10 16:26:45,541 [DefaultQuartzScheduler_Worker-2] ERROR imperugo.linkflood.scheduler.LinkfloodGrabjob [(null)] - [Scheduler] Unable to grab the job imper-WIN8 [(null)] [(null)] [(null)] 
- System.Net.WebException: The request was aborted: Could not create SSL/TLS secure channel.
-   at System.Net.HttpWebRequest.GetResponse()
-   at imperugo.linkflood.scheduler.LinkfloodGrabjob.DownloadWebPage(Uri url) in c:\Project\Spike\Linkflood\imperugo.linkflood.scheduler\LinkfloodGrabjob.cs:line 79
-   at imperugo.linkflood.scheduler.LinkfloodGrabjob.Execute(IJobExecutionContext context) in c:\Project\Spike\Linkflood\imperugo.linkflood.scheduler\LinkfloodGrabjob.cs:line 37
+2012-07-08 19:06:43,518 [DefaultQuartzScheduler_Worker-1] ERROR imperugo.linkflood.scheduler.LinkfloodPostJob [(null)] - [Scheduler] Error posting imperWin8 [(null)] [(null)] [(null)] 
+ CookComputing.XmlRpc.XmlRpcIllFormedXmlException: Response from server does not contain valid XML. ---> System.Xml.XmlException: There are multiple root elements. Line 2, position 2.
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.LoadDocSequence(XmlDocument parentDoc)
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(Stream inStream)
+   at CookComputing.XmlRpc.XmlRpcSerializer.DeserializeResponse(Stream stm, Type svcType)
+   --- End of inner exception stack trace ---
+   at CookComputing.XmlRpc.XmlRpcSerializer.DeserializeResponse(Stream stm, Type svcType)
+   at CookComputing.XmlRpc.XmlRpcClientProtocol.ReadResponse(XmlRpcRequest req, WebResponse webResp, Stream respStm, Type returnType)
+   at CookComputing.XmlRpc.XmlRpcClientProtocol.Invoke(Object clientObj, MethodInfo mi, Object[] parameters)
+   at CookComputing.XmlRpc.XmlRpcClientProtocol.Invoke(MethodInfo mi, Object[] Parameters)
+   at XmlRpcProxyacee6915-23fe-42f4-a14c-00b949ebec42.NewPost(String , String , String , Post , Boolean )
+   at AlexJamesBrown.JoeBlogs.MetaWeblogWrapper.NewPost(Post content, Boolean publish)
+   at imperugo.linkflood.scheduler.LinkfloodPostJob.Post(String title, String body) in c:\Project\Spike\Linkflood\imperugo.linkflood.scheduler\LinkfloodPostJob.cs:line 114
+   at imperugo.linkflood.scheduler.LinkfloodPostJob.Execute(IJobExecutionContext context) in c:\Project\Spike\Linkflood\imperugo.linkflood.scheduler\LinkfloodPostJob.cs:line 76
+2012-07-08 19:10:24,804 [DefaultQuartzScheduler_Worker-2] ERROR imperugo.linkflood.scheduler.LinkfloodPostJob [(null)] - [Scheduler] Error posting imperWin8 [(null)] [(null)] [(null)] 
+ CookComputing.XmlRpc.XmlRpcIllFormedXmlException: Response from server does not contain valid XML. ---> System.Xml.XmlException: There are multiple root elements. Line 2, position 2.
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.LoadDocSequence(XmlDocument parentDoc)
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(Stream inStream)
+   at CookComputing.XmlRpc.XmlRpcSerializer.DeserializeResponse(Stream stm, Type svcType)
+   --- End of inner exception stack trace ---
+   at CookComputing.XmlRpc.XmlRpcSerializer.DeserializeResponse(Stream stm, Type svcType)
+   at CookComputing.XmlRpc.XmlRpcClientProtocol.ReadResponse(XmlRpcRequest req, WebResponse webResp, Stream respStm, Type returnType)
+   at CookComputing.XmlRpc.XmlRpcClientProtocol.Invoke(Object clientObj, MethodInfo mi, Object[] parameters)
+   at CookComputing.XmlRpc.XmlRpcClientProtocol.Invoke(MethodInfo mi, Object[] Parameters)
+   at XmlRpcProxyacee6915-23fe-42f4-a14c-00b949ebec42.NewPost(String , String , String , Post , Boolean )
+   at AlexJamesBrown.JoeBlogs.MetaWeblogWrapper.NewPost(Post content, Boolean publish)
+   at imperugo.linkflood.scheduler.LinkfloodPostJob.Post(String title, String body) in c:\Project\Spike\Linkflood\imperugo.linkflood.scheduler\LinkfloodPostJob.cs:line 114
+   at imperugo.linkflood.scheduler.LinkfloodPostJob.Execute(IJobExecutionContext context) in c:\Project\Spike\Linkflood\imperugo.linkflood.scheduler\LinkfloodPostJob.cs:line 76
+2012-07-08 19:28:23,376 [DefaultQuartzScheduler_Worker-1] ERROR imperugo.linkflood.scheduler.LinkfloodPostJob [(null)] - [Scheduler] Error posting imperWin8 [(null)] [(null)] [(null)] 
+ CookComputing.XmlRpc.XmlRpcIllFormedXmlException: Response from server does not contain valid XML. ---> System.Xml.XmlException: There are multiple root elements. Line 2, position 2.
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.LoadDocSequence(XmlDocument parentDoc)
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(Stream inStream)
+   at CookComputing.XmlRpc.XmlRpcSerializer.DeserializeResponse(Stream stm, Type svcType)
+   --- End of inner exception stack trace ---
+   at CookComputing.XmlRpc.XmlRpcSerializer.DeserializeResponse(Stream stm, Type svcType)
+   at CookComputing.XmlRpc.XmlRpcClientProtocol.ReadResponse(XmlRpcRequest req, WebResponse webResp, Stream respStm, Type returnType)
+   at CookComputing.XmlRpc.XmlRpcClientProtocol.Invoke(Object clientObj, MethodInfo mi, Object[] parameters)
+   at CookComputing.XmlRpc.XmlRpcClientProtocol.Invoke(MethodInfo mi, Object[] Parameters)
+   at XmlRpcProxya65904be-a107-40ae-ac3f-de54cfdb5fdb.NewPost(String , String , String , Post , Boolean )
+   at AlexJamesBrown.JoeBlogs.MetaWeblogWrapper.NewPost(Post content, Boolean publish)
+   at imperugo.linkflood.scheduler.LinkfloodPostJob.Post(String title, String body) in c:\Project\Spike\Linkflood\imperugo.linkflood.scheduler\LinkfloodPostJob.cs:line 114
+   at imperugo.linkflood.scheduler.LinkfloodPostJob.Execute(IJobExecutionContext context) in c:\Project\Spike\Linkflood\imperugo.linkflood.scheduler\LinkfloodPostJob.cs:line 76

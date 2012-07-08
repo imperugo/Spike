@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfTweet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Tweet>
+    <CreationDate>2012-06-26T08:32:36+02:00</CreationDate>
+    <Id>217505626077663233</Id>
+    <Text>Cascading drop down with knockoutjs and http://t.co/7OZEr7F2 MVC http://t.co/Urk1Fr3T #dev #knockoutjs #javascript</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-06-26T08:31:45+02:00</CreationDate>
+    <Id>217505411333488641</Id>
+    <Text>Perfecting the Stylesheet: Common Errors Made by CSS Beginners http://t.co/P5G5s4T1 #dev #css</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-06-26T08:31:14+02:00</CreationDate>
+    <Id>217505280169218048</Id>
+    <Text>Running UI Tests on Local http://t.co/7OZEr7F2 Website with Development Server http://t.co/dCEiKlpC #dev #aspnet</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-06-26T08:30:40+02:00</CreationDate>
+    <Id>217505137638391809</Id>
+    <Text>Microsoft’s Scott Guthrie on what has happened to Silverlight http://t.co/iYEMHrQ5 #dev #silverlight</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-06-26T08:30:02+02:00</CreationDate>
+    <Id>217504976489033728</Id>
+    <Text>Timed Notifications with CSS Animations http://t.co/qOH9G5F3 #dev #css</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-06-26T08:29:32+02:00</CreationDate>
+    <Id>217504851813343234</Id>
+    <Text>Why Responsive Design Actually Begins on the Server http://t.co/XmT3juqb #ux</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-06-26T08:28:18+02:00</CreationDate>
+    <Id>217504540642115584</Id>
+    <Text>Status update: Windows Phone 8 Developer Tools (2012.06.21) http://t.co/vVIVeLsw #dev #wp #wp8</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-06-26T08:27:20+02:00</CreationDate>
+    <Id>217504299717103616</Id>
+    <Text>Single Page App Using Knockout and http://t.co/7OZEr7F2 http://t.co/G6UZ25IT #dev #knockout #aspnetmvc #dev</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-06-26T08:25:55+02:00</CreationDate>
+    <Id>217503940978286592</Id>
+    <Text>Interface Trends for Designing a Social Network http://t.co/tyEUCcy2 #design</Text>
+  </Tweet>
+</ArrayOfTweet>

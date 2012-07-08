@@ -32,21 +32,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C5">
-      <HintPath>..\packages\Quartz.2.0.1\lib\net40\C5.dll</HintPath>
-    </Reference>
     <Reference Include="Common.Logging">
       <HintPath>..\packages\Common.Logging.2.1.1\lib\net40\Common.Logging.dll</HintPath>
     </Reference>
-    <Reference Include="CookComputing.XmlRpcV2, Version=3.0.0.0, Culture=neutral, PublicKeyToken=a7d6e17aa302004d, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\JoeBlog\CookComputing.XmlRpcV2.dll</HintPath>
-    </Reference>
     <Reference Include="JoeBlogs">
       <HintPath>..\packages\JoeBlog\JoeBlogs.dll</HintPath>
-    </Reference>
-    <Reference Include="log4net">
-      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.4.5.7\lib\net40\Newtonsoft.Json.dll</HintPath>
@@ -54,19 +44,26 @@
     <Reference Include="Quartz">
       <HintPath>..\packages\Quartz.2.0.1\lib\net40\Quartz.dll</HintPath>
     </Reference>
+    <Reference Include="Raven.Abstractions">
+      <HintPath>..\packages\RavenDB.Client.1.2.2032-Unstable\lib\net40\Raven.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Client.Lightweight">
+      <HintPath>..\packages\RavenDB.Client.1.2.2032-Unstable\lib\net40\Raven.Client.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Imports.SignalR.Client">
+      <HintPath>..\packages\RavenDB.Client.1.2.2032-Unstable\lib\net40\Raven.Imports.SignalR.Client.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\FileSystemStorage.cs" />
     <Compile Include="Data\IStorage.cs" />
+    <Compile Include="Data\RavenStorage.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Tweet.cs" />
     <Compile Include="Extensions\ObjectExtension.cs" />

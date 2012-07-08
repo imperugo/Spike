@@ -45,35 +45,86 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C5">
-      <HintPath>..\packages\Quartz.2.0.1\lib\net40\C5.dll</HintPath>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\packages\RavenDB.Database.1.2.2032-Unstable\lib\net40\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
     <Reference Include="Common.Logging">
       <HintPath>..\packages\Common.Logging.2.1.1\lib\net40\Common.Logging.dll</HintPath>
     </Reference>
-    <Reference Include="CookComputing.XmlRpcV2, Version=2.3.2.0, Culture=neutral, PublicKeyToken=a7d6e17aa302004d, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\JoeBlogsV1\CookComputing.XmlRpcV2.dll</HintPath>
+    <Reference Include="Common.Logging.Log4Net">
+      <HintPath>..\packages\Common.Logging.Log4Net.2.0.1\lib\net20\Common.Logging.Log4Net.dll</HintPath>
     </Reference>
-    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+    <Reference Include="Esent.Interop">
+      <HintPath>..\packages\RavenDB.Database.1.2.2032-Unstable\lib\net40\Esent.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory">
+      <HintPath>..\packages\RavenDB.Database.1.2.2032-Unstable\lib\net40\ICSharpCode.NRefactory.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net">
+      <HintPath>..\packages\RavenDB.Database.1.2.2032-Unstable\lib\net40\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Spatial">
+      <HintPath>..\packages\RavenDB.Database.1.2.2032-Unstable\lib\net40\Lucene.Net.Contrib.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.SpellChecker">
+      <HintPath>..\packages\RavenDB.Database.1.2.2032-Unstable\lib\net40\Lucene.Net.Contrib.SpellChecker.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Newtonsoft.Json.4.5.7\lib\net40\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="NLog">
+      <HintPath>..\packages\NLog.2.0.0.2000\lib\net40\NLog.dll</HintPath>
     </Reference>
     <Reference Include="Quartz">
       <HintPath>..\packages\Quartz.2.0.1\lib\net40\Quartz.dll</HintPath>
     </Reference>
+    <Reference Include="Raven.Abstractions">
+      <HintPath>..\packages\RavenDB.Client.1.2.2032-Unstable\lib\net40\Raven.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Backup">
+      <HintPath>..\packages\RavenDB.Database.1.2.2032-Unstable\lib\net40\Raven.Backup.exe</HintPath>
+    </Reference>
+    <Reference Include="Raven.Client.Embedded">
+      <HintPath>..\packages\RavenDB.Embedded.1.2.2032-Unstable\lib\net40\Raven.Client.Embedded.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Client.Lightweight">
+      <HintPath>..\packages\RavenDB.Client.1.2.2032-Unstable\lib\net40\Raven.Client.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Database">
+      <HintPath>..\packages\RavenDB.Database.1.2.2032-Unstable\lib\net40\Raven.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Imports.SignalR">
+      <HintPath>..\packages\RavenDB.Database.1.2.2032-Unstable\lib\net40\Raven.Imports.SignalR.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Imports.SignalR.Client">
+      <HintPath>..\packages\RavenDB.Client.1.2.2032-Unstable\lib\net40\Raven.Imports.SignalR.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Imports.SignalR.Hosting.Common">
+      <HintPath>..\packages\RavenDB.Database.1.2.2032-Unstable\lib\net40\Raven.Imports.SignalR.Hosting.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Imports.SignalR.Hosting.Self">
+      <HintPath>..\packages\RavenDB.Database.1.2.2032-Unstable\lib\net40\Raven.Imports.SignalR.Hosting.Self.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Munin">
+      <HintPath>..\packages\RavenDB.Database.1.2.2032-Unstable\lib\net40\Raven.Munin.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Smuggler">
+      <HintPath>..\packages\RavenDB.Database.1.2.2032-Unstable\lib\net40\Raven.Smuggler.exe</HintPath>
+    </Reference>
+    <Reference Include="Raven.Storage.Esent">
+      <HintPath>..\packages\RavenDB.Database.1.2.2032-Unstable\lib\net40\Raven.Storage.Esent.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Storage.Managed">
+      <HintPath>..\packages\RavenDB.Database.1.2.2032-Unstable\lib\net40\Raven.Storage.Managed.dll</HintPath>
+    </Reference>
+    <Reference Include="Spatial4n.Core">
+      <HintPath>..\packages\RavenDB.Database.1.2.2032-Unstable\lib\net40\Spatial4n.Core.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Net.Http.2.0.20505.0\lib\net40\System.Net.Http.dll</HintPath>
@@ -84,7 +135,6 @@
     <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Net.Http.2.0.20505.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -119,10 +169,6 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20505.0\lib\net40\System.Web.WebPages.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20505.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20505.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
@@ -134,7 +180,6 @@
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
-    <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
@@ -148,7 +193,10 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Raven.Studio.xap" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Scripts\AjaxLogin.js" />
@@ -183,9 +231,6 @@
       <Project>{fb93df5f-3d67-4c47-81d8-073a382c84df}</Project>
       <Name>imperugo.linkflood.scheduler</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Log4Net.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
