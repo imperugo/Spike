@@ -13,7 +13,7 @@ namespace imperugo.linkflood.scheduler{
 			categories = new List<Category>();
 
 			categories.Add(new Category("Technical", new[] {"#tech"}));
-			categories.Add(new Category("Dev", new[] {"#dev ", "@zite"}));
+			categories.Add(new Category("Dev", new[] {"#dev", "@zite"}));
 			categories.Add(new Category("UX & Design", new[] {"#ux", "#design"}));
 		}
 
