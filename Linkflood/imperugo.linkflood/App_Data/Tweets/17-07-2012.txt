@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfTweet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Tweet>
+    <CreationDate>2012-07-17T14:03:47+02:00</CreationDate>
+    <Id>225199114089013248</Id>
+    <Text>Droptiles - Metro style Live Tiles powered Web Dashboard http://t.co/WL3k07kY #dev #metro</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-17T14:02:51+02:00</CreationDate>
+    <Id>225198878067138560</Id>
+    <Text>CLR via C# http://t.co/eOU0dCWA #dev #book #csharp #dotnet</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-17T14:01:51+02:00</CreationDate>
+    <Id>225198628942262272</Id>
+    <Text>Improve your WordPress search results with a Google custom search engine http://t.co/iHrb1kL8 #dev #wordpress #google</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-17T08:50:46+02:00</CreationDate>
+    <Id>225120339221422080</Id>
+    <Text>Building Offline Web Apps with HTML5 http://t.co/9zScIG0Q #dev #html5</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-17T08:50:16+02:00</CreationDate>
+    <Id>225120214705111041</Id>
+    <Text>Introducing HTML5 Free Download http://t.co/QJqM0QO1 #dev #book #html5</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-17T08:49:05+02:00</CreationDate>
+    <Id>225119919245758466</Id>
+    <Text>Recline.js - Powerful Javascript Library for Building Data Heavy Applications http://t.co/hPkNAKyh #dev #javascript #recline</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-17T08:48:26+02:00</CreationDate>
+    <Id>225119754929709056</Id>
+    <Text>Everything you want to know about http://t.co/7OZEr7F2 Web API content negotation http://t.co/fSW5h9R9 #dev #webapi</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-17T08:47:52+02:00</CreationDate>
+    <Id>225119610947633152</Id>
+    <Text>iOS for .NET Devs http://t.co/2zQtSxh5 #dev #ios #dotnet</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-17T08:47:12+02:00</CreationDate>
+    <Id>225119441866862593</Id>
+    <Text>Droptiles - Metro style Live Tiles powered Web Dashboard http://t.co/WL3k07kY #dev #metro #windows8</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-17T08:46:37+02:00</CreationDate>
+    <Id>225119298094510080</Id>
+    <Text>Developing iOS Maps Applications with C# Seminar http://t.co/w2VaSccx #dev #ios #csharp</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-17T08:46:01+02:00</CreationDate>
+    <Id>225119147426725888</Id>
+    <Text>What's New in Firebug 1.10 http://t.co/KVCBG6ni #dev #firebug</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-17T08:45:34+02:00</CreationDate>
+    <Id>225119033631051776</Id>
+    <Text>Ultimate Collection Of Fresh jQuery Plugins And Tutorials http://t.co/7kdkkVdZ #dev #jquery</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-17T17:13:17+02:00</CreationDate>
+    <Id>225246802830561280</Id>
+    <Text>The Morning Brew #1147 http://t.co/AyavKVyi #dev</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-17T17:01:17+02:00</CreationDate>
+    <Id>225243784504541187</Id>
+    <Text>Arrived! xhr.send(ArrayBufferViews) http://t.co/rfMgeFT3 #dev #chrome #browser #html5</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-17T14:06:07+02:00</CreationDate>
+    <Id>225199702751182848</Id>
+    <Text>RT @engadget: Microsoft under investigation for not fulfilling browser choice pledge - http://t.co/yalv0uqa #tech</Text>
+  </Tweet>
+</ArrayOfTweet>

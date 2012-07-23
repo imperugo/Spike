@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="WpCronJob.cs" />
     <Compile Include="Data\FileSystemStorage.cs" />
     <Compile Include="Data\IStorage.cs" />
     <Compile Include="Data\RavenStorage.cs" />

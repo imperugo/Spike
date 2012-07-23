@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfTweet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Tweet>
+    <CreationDate>2012-07-14T19:06:51+02:00</CreationDate>
+    <Id>224188218516578304</Id>
+    <Text>Using http://t.co/7OZEr7F2 Resources in JavaScript http://t.co/GJJU9Dtt #dev #aspnet #javascript #js</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-14T19:05:16+02:00</CreationDate>
+    <Id>224187820397436930</Id>
+    <Text>http://t.co/7OZEr7F2 MVC: Displaying Partial Views using jQuery UI Dialog Boxes http://t.co/yyJp0NAq #dev #jquery #aspnetmvc</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-14T19:04:47+02:00</CreationDate>
+    <Id>224187701488918528</Id>
+    <Text>Telerik releases Kendo UI components for http://t.co/J81fYIkL MVC http://t.co/Y9IxajQ6 #aspnetmvc #telerik #kendoui #dev</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-14T19:03:01+02:00</CreationDate>
+    <Id>224187256867520514</Id>
+    <Text>What's Upcoming in jQuery 1.8, 1.9 and 2.0, and the Removal of IE6/7/8 Support http://t.co/7rccAwvw #dev #jquery #vnext #browser</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-14T19:02:18+02:00</CreationDate>
+    <Id>224187076810248192</Id>
+    <Text>New book: Start Here! Learn the Kinect API http://t.co/F4ycReDj #dev #kinect #api #book</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-14T19:01:44+02:00</CreationDate>
+    <Id>224186931636998144</Id>
+    <Text>Code Samples for JavaScript Metro Style Apps http://t.co/7eNVZy1U #dev #javascript #metro #js</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-14T19:00:04+02:00</CreationDate>
+    <Id>224186514429579267</Id>
+    <Text>The Journey to WordPress 3.5 Begins http://t.co/gco90j1r #dev #wordpress</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-14T13:40:40+02:00</CreationDate>
+    <Id>224106134703837184</Id>
+    <Text>Random Ravings of a Red Headed Code Monkey: F# and http://t.co/7OZEr7F2 Web API http://t.co/Yrv1cYQa #dev #webapi #fsharp</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-14T11:16:38+02:00</CreationDate>
+    <Id>224069885620269056</Id>
+    <Text>Working with the Different IIS Express Modes and HTTPS http://t.co/BPy3m4y3 #iis #iisexpress #dev</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-14T11:16:04+02:00</CreationDate>
+    <Id>224069743529836544</Id>
+    <Text>Using IIS Logs for Performance Testing with Visual Studio http://t.co/gSpgUoSr #dev #iis #visualstudio #testing</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-14T11:15:20+02:00</CreationDate>
+    <Id>224069560511373313</Id>
+    <Text>xunitcontrib-resharper 0.6 - Theory support!  http://t.co/q96YSlrq #dev #resharper #xunit</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-14T11:14:52+02:00</CreationDate>
+    <Id>224069439375675393</Id>
+    <Text>CSS3 Tutorial: Create A Sleek On/Off Button http://t.co/TRA1xJIM #dev #css</Text>
+  </Tweet>
+  <Tweet>
+    <CreationDate>2012-07-14T11:14:29+02:00</CreationDate>
+    <Id>224069346434093057</Id>
+    <Text>Metro, Authentication, and the http://t.co/7OZEr7F2 Web API http://t.co/dcLbccjo #webapi #windows8 #metro #dev</Text>
+  </Tweet>
+</ArrayOfTweet>

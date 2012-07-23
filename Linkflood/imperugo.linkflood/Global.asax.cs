@@ -72,6 +72,10 @@ namespace imperugo.linkflood
 				.WithIdentity("posterJob", "linkflood")
 				.Build();
 
+			IJobDetail cronJob = JobBuilder.Create<WpCronJob>()
+			.WithIdentity("wpCronJob", "linkflood")
+			.Build();
+
 			ITrigger halfHour = TriggerBuilder.Create()
 				.WithIdentity("30Min", "group1")
 				.WithCronSchedule("0 0/30 * 1/1 * ? *")
@@ -87,18 +91,27 @@ namespace imperugo.linkflood
 				.WithCronSchedule("0 0/5 * 1/1 * ? *")
 			.Build();
 
+			ITrigger tenMinutes = TriggerBuilder.Create()
+			.WithIdentity("10Min", "group1")
+				.WithCronSchedule("0 0/10 * 1/1 * ? *")
+			.Build();
+
+			ITrigger fifteenMinutes = TriggerBuilder.Create()
+			.WithIdentity("15Min", "group1")
+				.WithCronSchedule("0 0/15 * 1/1 * ? *")
+			.Build();
+
 			ITrigger everyDay = TriggerBuilder.Create()
 			.WithIdentity("everyDay", "group1")
 				.WithCronSchedule("0 0 11 1/1 * ? *")
 			.Build();
-
 
 			//sched.ScheduleJob(grabberJob, fiveMinutes);
 			//sched.ScheduleJob(grabberJob, oneMinute);
 			sched.ScheduleJob(grabberJob, halfHour);
 			//sched.ScheduleJob(posterJob, fiveMinutes);
 			sched.ScheduleJob(posterJob, everyDay);
-			
+			//sched.ScheduleJob(cronJob, fifteenMinutes);
 
 			sched.Start();
 		}
