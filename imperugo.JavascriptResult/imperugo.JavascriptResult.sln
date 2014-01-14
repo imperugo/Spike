@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "imperugo.JavascriptResult", "imperugo.JavascriptResult\imperugo.JavascriptResult.csproj", "{99A9916F-EE73-41D7-90FA-038E4D6C29AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "imperugo.javascriptResult.ClientSample", "imperugo.javascriptResult.ClientSample\imperugo.javascriptResult.ClientSample.csproj", "{2CBE3277-3771-4447-B0E6-DA87555FDF4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99A9916F-EE73-41D7-90FA-038E4D6C29AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99A9916F-EE73-41D7-90FA-038E4D6C29AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99A9916F-EE73-41D7-90FA-038E4D6C29AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99A9916F-EE73-41D7-90FA-038E4D6C29AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CBE3277-3771-4447-B0E6-DA87555FDF4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CBE3277-3771-4447-B0E6-DA87555FDF4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CBE3277-3771-4447-B0E6-DA87555FDF4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CBE3277-3771-4447-B0E6-DA87555FDF4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
